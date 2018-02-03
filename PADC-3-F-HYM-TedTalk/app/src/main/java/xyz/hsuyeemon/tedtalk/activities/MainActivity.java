@@ -1,11 +1,12 @@
 package xyz.hsuyeemon.tedtalk.activities;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
@@ -15,11 +16,13 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import xyz.hsuyeemon.tedtalk.R;
-import xyz.hsuyeemon.tedtalk.adapters.TalksAdapter;
+import xyz.hsuyeemon.tedtalk.adapters.TalkAdapter;
+import xyz.hsuyeemon.tedtalk.adapters.TedTalkFragmentAdapter;
 import xyz.hsuyeemon.tedtalk.fragments.LoginFragment;
 import xyz.hsuyeemon.tedtalk.fragments.PlaylistsFragment;
 import xyz.hsuyeemon.tedtalk.fragments.PodcastsFragment;
 import xyz.hsuyeemon.tedtalk.fragments.TalksFragment;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,7 +35,10 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.tb_ted_talk)
     TabLayout tbTedTalk;
 
-    private TalksAdapter mTalkAdapter;
+
+
+    private TedTalkFragmentAdapter mTedTalkAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,17 +52,17 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        mTalkAdapter = new TalksAdapter(getSupportFragmentManager());
-        vpMainContent.setAdapter(mTalkAdapter);
+        mTedTalkAdapter = new TedTalkFragmentAdapter(getSupportFragmentManager());
+        vpMainContent.setAdapter(mTedTalkAdapter);
 
-        mTalkAdapter.addTab("Talks",new TalksFragment());
-        mTalkAdapter.addTab("Playlists",new PlaylistsFragment());
-        mTalkAdapter.addTab("Podcasts",new PodcastsFragment());
-        mTalkAdapter.addTab("Log in",new LoginFragment());
+        mTedTalkAdapter.addTab("Talks",new TalksFragment());
+        mTedTalkAdapter.addTab("Playlists",new PlaylistsFragment());
+        mTedTalkAdapter.addTab("Podcasts",new PodcastsFragment());
+        mTedTalkAdapter.addTab("Log in",new LoginFragment());
 
 
         tbTedTalk.setupWithViewPager(vpMainContent);
-        vpMainContent.setOffscreenPageLimit(mTalkAdapter.getCount());
+        vpMainContent.setOffscreenPageLimit(mTedTalkAdapter.getCount());
 
 
 

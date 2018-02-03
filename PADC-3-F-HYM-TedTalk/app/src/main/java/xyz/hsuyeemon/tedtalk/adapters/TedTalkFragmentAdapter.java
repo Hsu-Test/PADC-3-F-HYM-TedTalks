@@ -12,12 +12,12 @@ import java.util.List;
  * Created by Dell on 2/3/2018.
  */
 
-public class TalksAdapter extends FragmentStatePagerAdapter {
+public class TedTalkFragmentAdapter extends FragmentStatePagerAdapter {
 
     private List<Fragment> mFragments;
     private List<String> mTabTitles;
 
-    public TalksAdapter(FragmentManager fm) {
+    public TedTalkFragmentAdapter(FragmentManager fm) {
         super(fm);
         mFragments = new ArrayList<>();
         mTabTitles = new ArrayList<>();

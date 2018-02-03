@@ -35,4 +35,5 @@
 
     <!--Specific Ratio     -->
     <dimen name="iv_ted_talk_height">200dp</dimen>
+    <dimen name="iv_playlist_height">160dp</dimen>
 </resources>

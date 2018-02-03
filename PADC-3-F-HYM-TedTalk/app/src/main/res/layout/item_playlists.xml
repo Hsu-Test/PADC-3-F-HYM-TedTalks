@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:weightSum="2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_medium"
+    android:layout_marginBottom="@dimen/margin_medium">
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/iv_playlist_height"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/iv_playlist_height"
+            android:id="@+id/iv_playlist1"
+            android:src="@drawable/iv_dummy_playlist"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/tv_playlist_title"
+            style="@style/white_text_black_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lb_playlist_title"
+            android:layout_above="@id/tv_talk_amount"
+            android:layout_alignLeft="@id/tv_talk_amount"
+            android:textSize="@dimen/text_regular_2x"
+            android:layout_marginRight="@dimen/margin_xlarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_talk_amount"
+            android:text="@string/lb_talk_amount"
+            style="@style/white_text_black_border"
+            android:layout_alignBottom="@id/iv_playlist1"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:textSize="@dimen/text_regular"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="5dp"
+            android:id="@+id/divider"
+            android:background="@color/primary"
+            android:layout_toRightOf="@id/tv_talk_amount"
+            android:layout_alignBottom="@id/tv_talk_amount"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_alignTop="@id/tv_talk_amount"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_time_elapsed"
+            android:text="@string/lb_time_elapsed_playlist"
+            style="@style/white_text_black_border"
+            android:layout_alignBottom="@id/tv_talk_amount"
+            android:layout_toRightOf="@id/divider"
+            android:textSize="@dimen/text_regular"
+            android:layout_marginLeft="@dimen/margin_medium"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_vert"
+            android:src="@drawable/ic_more_vert_24dp"
+            android:tint="@color/white_full"
+            android:layout_alignBottom="@id/tv_talk_amount"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/iv_playlist_height"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/iv_playlist_height"
+            android:id="@+id/iv_playlist2"
+            android:src="@drawable/iv_dummy_playlist2"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@id/tv_playlist_title"
+            style="@style/white_text_black_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lb_playlist_title"
+            android:layout_above="@id/tv_talk_amount"
+            android:layout_alignLeft="@id/tv_talk_amount"
+            android:textSize="@dimen/text_regular_2x"
+            android:layout_marginRight="@dimen/margin_xlarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@id/tv_talk_amount"
+            android:text="@string/lb_talk_amount"
+            style="@style/white_text_black_border"
+            android:layout_alignBottom="@id/iv_playlist2"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:textSize="@dimen/text_regular"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="5dp"
+            android:id="@id/divider"
+            android:background="@color/primary"
+            android:layout_toRightOf="@id/tv_talk_amount"
+            android:layout_alignBottom="@id/tv_talk_amount"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_alignTop="@id/tv_talk_amount"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@id/tv_time_elapsed"
+            android:text="@string/lb_time_elapsed_playlist"
+            style="@style/white_text_black_border"
+            android:layout_alignBottom="@id/tv_talk_amount"
+            android:layout_toRightOf="@id/divider"
+            android:textSize="@dimen/text_regular"
+            android:layout_marginLeft="@dimen/margin_medium"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@id/iv_vert"
+            android:src="@drawable/ic_more_vert_24dp"
+            android:tint="@color/white_full"
+            android:layout_alignBottom="@id/tv_talk_amount"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

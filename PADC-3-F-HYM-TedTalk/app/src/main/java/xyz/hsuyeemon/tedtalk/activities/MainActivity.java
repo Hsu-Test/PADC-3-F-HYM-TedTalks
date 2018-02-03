@@ -5,8 +5,6 @@ import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
@@ -16,9 +14,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import xyz.hsuyeemon.tedtalk.R;
-import xyz.hsuyeemon.tedtalk.adapters.TalkAdapter;
 import xyz.hsuyeemon.tedtalk.adapters.TedTalkFragmentAdapter;
-import xyz.hsuyeemon.tedtalk.fragments.LoginFragment;
+import xyz.hsuyeemon.tedtalk.fragments.MyTalkFragment;
 import xyz.hsuyeemon.tedtalk.fragments.PlaylistsFragment;
 import xyz.hsuyeemon.tedtalk.fragments.PodcastsFragment;
 import xyz.hsuyeemon.tedtalk.fragments.TalksFragment;
@@ -58,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         mTedTalkAdapter.addTab("Talks",new TalksFragment());
         mTedTalkAdapter.addTab("Playlists",new PlaylistsFragment());
         mTedTalkAdapter.addTab("Podcasts",new PodcastsFragment());
-        mTedTalkAdapter.addTab("Log in",new LoginFragment());
+        mTedTalkAdapter.addTab("My Talks",new MyTalkFragment());
 
 
         tbTedTalk.setupWithViewPager(vpMainContent);

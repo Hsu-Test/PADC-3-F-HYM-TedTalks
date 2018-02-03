@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <FrameLayout
+            android:id="@+id/fl_first_letter_container"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2">
+
+            <ImageView
+                android:id="@+id/iv_first_letter_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_lens_24dp"
+                android:tint="@color/accent" />
+
+            <TextView
+                android:id="@+id/tv_first_letter"
+                style="@style/white_text_black_border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium_3"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/lb_first_letter"
+                android:textSize="@dimen/text_heading_2x"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:layout_toRightOf="@id/fl_first_letter_container"
+            android:text="@string/lb_name"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <TextView
+            android:id="@+id/tv_login_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_below="@id/tv_name"
+            android:text="@string/lb_login_status"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_regular" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_playlist_play"
+            android:src="@drawable/ic_playlist_play_24dp"
+            android:tint="@color/accent"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:padding="@dimen/margin_medium_2"/>
+
+        <TextView
+            android:id="@+id/tv_my_lists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:layout_toRightOf="@id/iv_playlist_play"
+            android:text="@string/lb_my_lists"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <TextView
+            android:id="@+id/tv_my_lists1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_my_lists"
+            android:layout_below="@id/tv_my_lists"
+            android:text="@string/lb_login_status"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_regular" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_likes"
+            android:src="@drawable/ic_favorite_border_24dp"
+            android:tint="@color/accent"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:padding="@dimen/margin_medium_2"/>
+
+        <TextView
+            android:id="@+id/tv_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:layout_toRightOf="@id/iv_likes"
+            android:text="@string/lb_likes"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <TextView
+            android:id="@+id/tv_likes_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_likes"
+            android:layout_below="@id/tv_likes"
+            android:text="@string/lb_like_status"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_regular" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_downloads"
+            android:src="@drawable/ic_file_download_24dp"
+            android:tint="@color/accent"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:padding="@dimen/margin_medium_2"/>
+
+        <TextView
+            android:id="@+id/tv_downloads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:layout_toRightOf="@id/iv_downloads"
+            android:text="@string/lb_downloads"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <TextView
+            android:id="@+id/tv_download_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_downloads"
+            android:layout_below="@id/tv_downloads"
+            android:text="@string/lb_download_status"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_regular" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_history"
+            android:src="@drawable/ic_history_24dp"
+            android:tint="@color/accent"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:padding="@dimen/margin_medium_2"/>
+
+        <TextView
+            android:id="@+id/tv_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:layout_toRightOf="@id/iv_history"
+            android:text="@string/lb_history"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <TextView
+            android:id="@+id/tv_history_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_history"
+            android:layout_below="@id/tv_history"
+            android:text="@string/lb_history_status"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_regular" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

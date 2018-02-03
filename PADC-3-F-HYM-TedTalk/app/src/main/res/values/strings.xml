@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TedTalk</string>
+    <string name="action_settings">Settings</string>
+    <string name="home_title"><b>TED</b></string>
+
+
+
+    <string name="lb_tv_tips">Tip: You can continue playing a talk while on another screen or app. Enable background playback in Settings.</string>
+    <string name="lb_talk_brief">You aren\'t at the mercy of your actions — your brain creates them</string>
+    <string name="lb_speaker_name">Lisa Feldman Barret</string>
+    <string name="lb_time_elapsed">18:15</string>
+</resources>

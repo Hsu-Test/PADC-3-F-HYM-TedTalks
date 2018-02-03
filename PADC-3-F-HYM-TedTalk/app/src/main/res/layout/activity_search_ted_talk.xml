@@ -1,6 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/accent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <EditText
+            android:id="@+id/et_search_ted_talks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginRight="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:hint="Search Ted Talks"
+            android:textColorHint="@color/secondary_text" />
+
+        <TextView
+            android:id="@+id/tv_recommended_topics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_search_ted_talks"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/lb_recommended_topics"
+            android:textColor="@color/accent"
+            android:textSize="@dimen/text_regular"
+            android:textStyle="bold" />
+        <!--TODO  change drawable to imageView -->
+        <TextView
+            android:id="@+id/tv_state_building"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_recommended_topics"
+            android:layout_below="@id/tv_recommended_topics"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:drawableLeft="@drawable/ic_local_offer_24dp"
+            android:drawablePadding="@dimen/margin_medium"
+            android:drawableTint="@color/primary_dark"
+            android:text="@string/lb_state_buildings"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular_2x" />
+        <!--TODO  change drawable to imageView -->
+        <TextView
+            android:id="@+id/tv_buddhism"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_recommended_topics"
+            android:layout_below="@id/tv_state_building"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:drawableLeft="@drawable/ic_local_offer_24dp"
+            android:drawablePadding="@dimen/margin_medium"
+            android:drawableTint="@color/primary_dark"
+            android:text="@string/lb_buddhism"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular_2x" />
+        <!--TODO  change drawable to imageView -->
+        <TextView
+            android:id="@+id/tv_ted_books"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_recommended_topics"
+            android:layout_below="@id/tv_buddhism"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:drawableLeft="@drawable/ic_local_offer_24dp"
+            android:drawablePadding="@dimen/margin_medium"
+            android:drawableTint="@color/primary_dark"
+            android:text="@string/lb_ted_books"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular_2x" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_show_all_topics"
+            android:text="@string/lb_show_all_topics"
+            android:layout_alignLeft="@id/tv_state_building"
+            android:layout_below="@id/tv_ted_books"
+            android:textColor="@color/accent"
+            android:textSize="@dimen/text_regular"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>

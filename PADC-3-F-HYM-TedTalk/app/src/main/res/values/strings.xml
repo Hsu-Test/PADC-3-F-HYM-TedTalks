@@ -26,5 +26,17 @@
     <string name="lb_downloads">Downloads</string>
     <string name="lb_history">History</string>
 
+    <string name="lb_recommended_topics">Recommended Topics</string>
+    <string name="lb_state_buildings">State Buildings</string>
+    <string name="lb_buddhism">Buddhism</string>
+    <string name="lb_ted_books">Ted Books</string>
+    <string name="lb_recommended_speakers">Recommended Speakers</string>
+    <string name="lb_jeremy_jackson">Jeremy Jackson</string>
+    <string name="lb_lyad_rahwan">Lyad Rahwan</string>
+    <string name="lb_eban_bayer">Eban Bayer</string>
+    <string name="lb_show_all_topics">Show all topics</string>
+    <string name="lb_show_all_speakers">Show all speakers</string>
+
+
 
 </resources>

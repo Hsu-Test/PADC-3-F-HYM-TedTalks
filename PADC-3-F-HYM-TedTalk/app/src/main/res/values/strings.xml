@@ -27,15 +27,30 @@
     <string name="lb_history">History</string>
 
     <string name="lb_recommended_topics">Recommended Topics</string>
-    <string name="lb_state_buildings">State Buildings</string>
-    <string name="lb_buddhism">Buddhism</string>
-    <string name="lb_ted_books">Ted Books</string>
+    <string name="lb_t1">State Buildings</string>
+    <string name="lb_t2">Buddhism</string>
+    <string name="lb_t3">Ted Books</string>
+
     <string name="lb_recommended_speakers">Recommended Speakers</string>
-    <string name="lb_jeremy_jackson">Jeremy Jackson</string>
-    <string name="lb_lyad_rahwan">Lyad Rahwan</string>
-    <string name="lb_eban_bayer">Eban Bayer</string>
+    <string name="lb_s1">Jeremy Jackson</string>
+    <string name="lb_s2">Lyad Rahwan</string>
+    <string name="lb_s3">Eban Bayer</string>
+
+    <string name="lb_recommended_subtitle_lang">Recommended Subtitle Languages</string>
+    <string name="lb_lang1">French (canada)</string>
+    <string name="lb_lang2">Danish</string>
+    <string name="lb_lang3">Hungarian</string>
+
+    <string name="lb_recommended_events">Recommended Events</string>
+    <string name="lb_e1">TED2016</string>
+    <string name="lb_e2">TED2015</string>
+    <string name="lb_e3">TED2014</string>
+
+
     <string name="lb_show_all_topics">Show all topics</string>
     <string name="lb_show_all_speakers">Show all speakers</string>
+    <string name="lb_show_all_subtitle_lang">Show all subtitle languages</string>
+    <string name="lb_show_all_events">Show all events</string>
 
 
 
